@@ -20,7 +20,7 @@ WAL recovery during database initialization.
 Tombstone markers for representing deleted records.
 A basic TCP server for accepting client commands.
 🏗️ Architecture
-text
+
                  Client
                    |
                    v
@@ -66,7 +66,7 @@ The WAL records incoming data before it is inserted into the in-memory table.
 
 Each record contains:
 
-text
+
 +----------------+----------------+
 | Key Length     | Value Length   |
 | 4 bytes        | 4 bytes        |
@@ -114,7 +114,7 @@ When the MemTable reaches its configured capacity, the storage engine creates an
 
 Example filenames:
 
-text
+
 MANIFEST/
 ├── current.sst
 ├── 000000_level000.sst
@@ -162,7 +162,6 @@ Expected response:
 Inserted
 
 📦 Project Structure
-text
 walnutDB/
 │
 ├── src/
